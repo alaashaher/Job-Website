@@ -1,0 +1,26 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "the end project of pug level ",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "run well "
+  },
+  "author": "alaa shaher",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-livereload": "^4.0.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.1",
+    "gulp-watch": "^5.0.1"
+  },
+  "dependencies": {
+    "gulp-scss": "^1.4.0",
+    "gulp-sourcemaps": "^2.6.4"
+  }
+}

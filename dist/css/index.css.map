@@ -1,0 +1,1 @@
+{"version":3,"sources":["_header.scss","_footer.scss"],"names":[],"mappings":"AAAA,OACI,mBAAa,CAAb,mBAAa,CAAb,YAAa,CACb,UAAW,CACd,OCFG,UAAW","file":"index.css","sourcesContent":["header {\n    display: flex;\n    color: aqua;\n}\n","footer {\n    color: aqua;\n}"]}

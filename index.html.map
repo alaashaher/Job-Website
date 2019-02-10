@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["index.pug"],"sourcesContent":["doctype html\nhtml\n  head\n    include ./_style.pug\n    title PUG\n  body\n    include ./_header.pug\n    \n\n    script(src=\"dist/js/index.js\")\n    \n\n    "],"file":"index.html"}
