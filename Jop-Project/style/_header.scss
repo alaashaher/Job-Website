@@ -1,4 +1,36 @@
-header {
-    display: flex;
-    color: aqua;
+#home {
+    .container-fluid {
+        padding: 0px;
+
+        .navbar {
+            position: fixed;
+            width: 100%;
+            padding: 1%;
+            padding-left: 13%;
+            z-index: 99;
+
+            .navbar-brand {
+                color: #576c8c;
+            }
+
+            .navbar-nav {
+                .nav-item {
+                    margin-left: 10px;
+
+                    a {
+                        color: white;
+                    }
+                }
+
+                .nav-item a:hover {
+                    text-decoration: underline;
+                    color: #576c8c;
+                }
+            }
+        }
+
+        #MobileMenu {
+            display: none;
+        }
+    }
 }
