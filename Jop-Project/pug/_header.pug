@@ -1,5 +1,5 @@
 header#home
-  div.container-fluid
+  div.container-fluid.row
     nav(class="navbar navbar-expand-lg navbar-dark bg-dark text-center")
       a(class="navbar-brand hidden-lg" href="#home")
         h3 Job
@@ -21,15 +21,17 @@ header#home
           li(class="nav-item")
             a(class="nav-link" href="#downloads") Login/Register
 
-    div(class="w3-sidebar w3-bar-block w3-card w3-animate-left" id="MobileMenu"
-            style="left:0px; display:none; top: 0px;")
-      a(class="w3-bar-item  w3-large closebtn")
-      a(class="nav-link1en nav-link1") Tech Careers 
-      a(class="nav-link1en nav-link1") Career Explorer 
-      a(class="nav-link1en nav-link1") Insights 
-      a(class="nav-link1en nav-link1") Contact Sales
-      a(class="nav-link1en nav-link1") Login/Register
-       
-
+    
+    div(id="mySidenav" class="sidenav")
+      a(href="javascript:void(0)" class="closebtn" onclick="closeNav()") &times;
+      a(href="#" class="nav-link") Tech Careers 
+      a(href="#" class="nav-link") Career Explorer
+      a(href="#" class="nav-link") Insights 
+      a(href="#" class="nav-link") Contact Sales 
+      a(class="nav-link" href="#about") For Employers 
+      a(class="nav-link" href="#downloads") Login/Register
+    span(style="font-size:30px;cursor:pointer; display:none;" onclick="openNav()" class="open") &#9776;
+    
     div(class="text-center header-body")
+      img(src="dist/image/header-image.jpg" alt="jobأeader" class="header-image")
       
