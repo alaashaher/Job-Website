@@ -23,7 +23,7 @@ header#home
 
     
     div(id="mySidenav" class="sidenav")
-      a(href="javascript:void(0)" class="closebtn" onclick="closeNav()") &times;
+      a(href="" class="closebtn" onclick="closeNav()") &times;
       a(href="#" class="nav-link") Tech Careers 
       a(href="#" class="nav-link") Career Explorer
       a(href="#" class="nav-link") Insights 
@@ -32,6 +32,10 @@ header#home
       a(class="nav-link" href="#downloads") Login/Register
     span(style="font-size:30px;cursor:pointer; display:none;" onclick="openNav()" class="open") &#9776;
     
-    div(class="text-center header-body")
-      img(src="dist/image/header-image.jpg" alt="jobأeader" class="header-image")
-      
+    div(class="text-center header-body col-12")
+      div.form.row.text-center
+        div.col-12.text-center.text-header
+          h2 Search 78,263 tech jobs. Find yours today.
+        input(type="text" placeholder="Job Title, Skills, Keywords or Company Name" class="col-lg-4")
+        input(type="text" placeholder="Zip Code, City or State" class="col-lg-4")
+        button.text-center.search-btn.btn Search

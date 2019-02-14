@@ -11,6 +11,7 @@ const uglify = require('gulp-uglify');
 
 gulp.task('sass', function () {
     return gulp.src('Jop-Project/style/*.scss')
+        .on('error', sass.logError)
         .pipe(sourcemaps.init())
         .pipe(sass({outputStyle: 'compressed'}))
         .pipe(autoprefixer({
@@ -20,7 +21,7 @@ gulp.task('sass', function () {
         .pipe(concat('index.css'))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('dist/css'))
-        .pipe(livereload());
+        .pipe(livereload())
 });
 
 gulp.task('js', function () {
@@ -29,7 +30,7 @@ gulp.task('js', function () {
         .pipe(uglify())
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('dist/js'))
-        .pipe(livereload());
+        .pipe(livereload())
 });
 
 gulp.task('pug', () => {
@@ -41,7 +42,7 @@ gulp.task('pug', () => {
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('./'))
         .pipe(connect.reload())
-        .pipe(livereload());
+        .pipe(livereload())
 });
 
 gulp.task('watch', () => {

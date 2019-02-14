@@ -1,6 +1,7 @@
 #home {
     .container-fluid {
         padding: 0px;
+        margin: 0px;
 
         .navbar {
             position: fixed;
@@ -37,7 +38,7 @@
             height: 100%;
             width: 0;
             position: fixed;
-            z-index: 1;
+            z-index: 1000;
             top: 0;
             left: 0;
             background-color: #111;
@@ -82,12 +83,12 @@
                 padding-bottom: 0px;
                 padding-top: 0px;
                 left: 10px;
-                top: 10px;  
+                top: 10px;
                 position: fixed;
                 z-index: 100;
-                background-color: #a9a8a8bd;   
+                background-color: #a9a8a8bd;
                 line-height: 1.5;
-                font-size: 24px !important;                               
+                font-size: 24px !important;
             }
         }
 
@@ -102,10 +103,30 @@
         }
 
         .header-body {
-            .header-image {
-                position: fixed;
-                width: 100%;
-                height: 400px;
+            height: 500px;
+            width: 100%;
+            background-image: url(../../dist/image/header-image.jpg);
+            opacity: 0.5;
+            padding-top: 240px;
+
+            .form {
+                .text-header {
+                    color: #fff;
+                }
+
+                input {
+                    margin-left: 43px;
+                    padding: 14px 7px;
+                    font-size: 17px;
+                    outline: none;
+                }
+
+                .search-btn {
+                    padding: 14px 37px;
+                    margin-left: 32px;
+                    background-color: #0c2d63;
+                    color: white;
+                }
             }
         }
     }
