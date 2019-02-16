@@ -102,30 +102,37 @@
             }
         }
 
-        .header-body {
-            height: 500px;
+        .overlay {
+            background-color: rgba(62, 63, 63, 0.247);
             width: 100%;
-            background-image: url(../../dist/image/header-image.jpg);
-            opacity: 0.5;
-            padding-top: 240px;
+            height: 100%;
 
-            .form {
-                .text-header {
-                    color: #fff;
-                }
+            .header-body {
+                height: 500px;
+                width: 100%;
+                background-image: url(../../dist/image/header-image.jpg);
+                // opacity: 0.5;
+                padding-top: 240px;
 
-                input {
-                    margin-left: 43px;
-                    padding: 14px 7px;
-                    font-size: 17px;
-                    outline: none;
-                }
 
-                .search-btn {
-                    padding: 14px 37px;
-                    margin-left: 32px;
-                    background-color: #0c2d63;
-                    color: white;
+                .form {
+                    .text-header {
+                        color: #fff;
+                    }
+
+                    input {
+                        margin-left: 43px;
+                        padding: 14px 7px;
+                        font-size: 17px;
+                        outline: none;
+                    }
+
+                    .search-btn {
+                        padding: 14px 37px;
+                        margin-left: 32px;
+                        background-color: #0c2d63;
+                        color: white;
+                    }
                 }
             }
         }
