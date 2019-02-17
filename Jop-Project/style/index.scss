@@ -1,3 +1,7 @@
 @import './_header';
 @import './companies';
+@import './_feature.scss';
 @import './_footer';
+body {
+    overflow-x: hidden;
+}

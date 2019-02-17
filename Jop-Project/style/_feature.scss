@@ -1,0 +1,83 @@
+%transfomation {
+    -webkit-transition: all .7s ease-in-out;
+    -moz-transition: all .7s ease-in-out;
+    -o-transition: all .7s ease-in-out;
+    transition: all .7s ease-in-out;
+}
+
+#competition {
+    .container-fluid {
+        padding: 0px;
+        margin: 0px;
+
+        .competition-image1 {
+            background-image: url(../../dist/image/img_feature_1.jpg);
+            height: 400px;
+            @extend %transfomation;
+            &:hover {
+                opacity: 0.5;
+                cursor: pointer;
+            }
+        }
+
+        .competition-image2 {
+            background-image: url(../../dist/image/img_feature_2.jpg);
+            height: 400px;
+            @extend %transfomation;
+            &:hover {
+                opacity: 0.5;
+                cursor: pointer;
+            }
+        }
+
+        .competition-descraption {
+            text-align: left;
+            padding: 9% 5%;
+
+            .career {
+                background-color: rgba(255, 255, 255, 0);
+                color: rgb(8, 105, 170);
+                border-color: rgb(8, 105, 170);
+                padding: 10px 30px;
+                @extend %transfomation;
+                a {
+                    color: rgb(8, 105, 170);
+                    @extend %transfomation;
+                }
+
+                &:hover {
+                    background-color: rgb(8, 105, 170);
+
+                    a:hover {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        .competition-descraption2 {
+            background-color: rgb(8, 105, 170);
+            color: white;
+            @extend %transfomation;
+            .salary {
+                background-color: rgba(255, 255, 255, 0);
+                color: #fff;
+                border-color: #fff;
+                padding: 10px 30px;
+
+                a {
+                    color: #fff;
+                    @extend %transfomation;
+                }
+
+                &:hover {
+                    background-color: #fff;
+
+                    a:hover {
+                        color: rgb(8, 105, 170);
+                    }
+                }
+            }
+        }
+    }
+}
