@@ -1,0 +1,50 @@
+@import './_accordion-menu.scss';
+
+#accordion ul .li {
+    border-bottom: 1px solid rgba(29, 27, 27, 0.329);
+    margin-top: 10px;
+    color: rgba(137, 137, 137, 255);
+    font-size: 15px;
+}
+
+#job {
+    .container-fluid {
+        padding: 5% 3%;
+
+        .job-search {
+            div {
+                #accordion {
+                    ul li {
+                        ul {
+                            // margin-top: 10px;
+                            // padding: 5px 0px;
+                            // border: 1px solid rgba(221, 221, 221, 0.397);
+                            li {
+                                a {
+                                    input {
+                                        width: 99%;
+                                        margin: 2px 2px;
+                                        padding: 5%;
+                                        margin-top: 5px;
+                                        margin-left: -28px;                                    
+                                        border: 1px solid rgba(221, 221, 221, 0.397);
+                                    }
+                                }
+                                input {
+                                    margin-top: 2px;
+                                    padding-right: 2px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.p {
+    .fas {
+        float: right;
+    }
+}
