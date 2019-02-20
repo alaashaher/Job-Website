@@ -125,13 +125,23 @@
                         padding: 14px 7px;
                         font-size: 17px;
                         outline: none;
+
+                        @media screen and (min-width: 576px) {
+                            margin-top: 15px;
+                        }
                     }
 
                     .search-btn {
-                        padding: 14px 37px;
+                        margin-top: 16px;
                         margin-left: 32px;
                         background-color: #0c2d63;
                         color: white;
+                        height: 54px;
+
+                        &:hover {
+                            background-color: #fff;
+                            color: #0c2d63;
+                        }
                     }
                 }
             }
