@@ -16,26 +16,118 @@
                 #accordion {
                     ul li {
                         ul {
-                            // margin-top: 10px;
-                            // padding: 5px 0px;
-                            // border: 1px solid rgba(221, 221, 221, 0.397);
                             li {
                                 a {
-                                    input {
+                                    color: rgb(78, 77, 77);
+
+                                    &:hover {
+                                        text-decoration: none;
+                                        color: rgb(78, 77, 77);
+                                    }
+
+                                    .location {
                                         width: 99%;
                                         margin: 2px 2px;
                                         padding: 5%;
                                         margin-top: 5px;
-                                        margin-left: -28px;                                    
+                                        margin-left: -28px;
                                         border: 1px solid rgba(221, 221, 221, 0.397);
                                     }
                                 }
+
                                 input {
                                     margin-top: 2px;
                                     padding-right: 2px;
                                 }
+
+                                ul li {
+                                    &:hover {
+                                        color: rgb(104, 100, 100);
+                                        text-decoration: underline;
+                                    }
+                                }
                             }
                         }
+                    }
+                }
+            }
+        }
+
+        .job-body {
+            .row {
+                .job-find-header {
+                    padding-left: 50px;
+                    margin-left: 50px;
+
+                    .number {
+                        float: left;
+                        color: #7e7c7c;
+                    }
+
+                    .alert {
+                        border: 1px solid #7e7c7c;
+                        border-radius: 20px;
+                        padding: 10px;
+                        margin-left: 15px;
+                        color: #7e7c7c;
+
+                        &:hover {
+                            color: #4b4949;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .find-job {
+                    padding: 28px 24px;
+                    border: 1px solid rgb(211, 211, 211);
+                    margin-left: 57px;
+                    border-radius: 20px;
+                    padding-left: 50px;
+                    @extend %transfomation;
+                    margin-top: 20px;
+
+                    &:hover {
+                        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+                        cursor: pointer;
+                        border-top: 5px solid rgb(153, 41, 29);
+                    }
+
+                    .job-header {
+                        display: inline-block;
+                        width: 100%;
+
+                        .save {
+                            margin-left: 89%;
+                            font-weight: 100;
+
+                            &:hover {
+                                color: rgb(80, 48, 48);
+                                cursor: pointer;
+                            }
+                        }
+
+                        .left {
+                            float: left;
+                            // margin-left: 20px;
+                            font-weight: 100;
+
+                            &:hover {
+                                color: rgb(80, 48, 48);
+                                cursor: pointer;
+                            }
+                        }
+
+                    }
+
+                    .job-title {
+                        margin-top: 15px;
+                        color: rgb(36, 35, 35);
+                    }
+
+                    .job-descraption {
+                        color: rgb(104, 101, 101);
+                        margin-top: 20px;
                     }
                 }
             }
