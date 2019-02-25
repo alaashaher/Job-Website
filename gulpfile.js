@@ -13,7 +13,9 @@ gulp.task('sass', function () {
     return gulp.src('Jop-Project/style/*.scss')
         .on('error', sass.logError)
         .pipe(sourcemaps.init())
-        .pipe(sass({outputStyle: 'compressed'}))
+        .pipe(sass({
+            outputStyle: 'compressed'
+        }))
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
@@ -34,7 +36,7 @@ gulp.task('js', function () {
 });
 
 gulp.task('pug', () => {
-    return gulp.src('Jop-Project/pug/index.pug')
+    return gulp.src('Jop-Project/pug/*.pug')
         .pipe(sourcemaps.init())
         .pipe(pug({
             pretty: true
@@ -48,6 +50,7 @@ gulp.task('pug', () => {
 gulp.task('watch', () => {
     gulp.watch('Jop-Project/style/*.scss', ['sass']);
     gulp.watch('Jop-Project/pug/*.pug', ['pug']);
+    gulp.watch('Jop-Project/pug/partials/*.pug', ['pug']);
     gulp.watch('Jop-Project/script/*.js', ['js']);
 });
 

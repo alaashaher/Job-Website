@@ -1,0 +1,42 @@
+doctype html
+html
+  head
+    include ./partials/_style.pug
+    title JOB
+  body
+    header#home
+        include ./partials/_nav.pug
+    section#login
+        div.login-page
+            header.headerLinks
+                ul
+                    li
+                        a(href="#home") Home
+                    li 
+                        a(href="https://www.facebook.com/")
+                            i.fab.fa-facebook
+                    li 
+                        a(href="https://twitter.com/")
+                            i.fab.fa-twitter-square
+                    li 
+                        a(href="#") العربية
+            div.text-center
+                h3.welcom Welcome, to contain please log in
+            form
+                div.form-content.text-center
+                    div.form-group.text-center
+                        input(type="email" id="textEmail" class="form-control input-underline input-lg" placeholder=" Your email")
+                    div.form-group.text-center
+                        input(type="password" class="form-control input-underline input-lg" id="inputEmail3" placeholder="Password")
+                    p(class="forgetpassword-class") 
+                        button(type="submit" class="btn rounded-btn") Login
+                        a(href="") Forget Password
+                    
+                    div
+                        p you don't have anccount!  
+                            a(href="./signup.html") Register
+    include ./partials/_footer.pug
+    script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous")
+    script(src="dist/js/index.js")
