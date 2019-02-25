@@ -9,24 +9,22 @@
   </head>
   <body>
     <header id="home">
-      <div class="container-fluid row">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-center"><a class="navbar-brand hidden-lg" href="#home">
-            <h3>Job</h3></a>
-          <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active"><a class="nav-link" href="#home">Tech Careers </a></li>
-              <li class="nav-item"><a class="nav-link" href="#companies">Companies </a></li>
-              <li class="nav-item"><a class="nav-link" href="#competition">Feature</a></li>
-            </ul>
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item"><a class="nav-link" href="#job">For Employers  </a></li>
-              <li class="nav-item"><a class="nav-link" href="#footer">Contact Sales </a></li>
-              <li class="nav-item"><a class="nav-link" href="./login.html">Login/Register</a></li>
-            </ul>
-          </div>
-        </nav>
-        <div class="sidenav" id="mySidenav"><a class="closebtn" href="" onclick="closeNav()">&times; </a><a class="nav-link" href="#home">Tech Careers </a><a class="nav-link" href="#companies">Companies</a><a class="nav-link" href="#competition">Feature</a><a class="nav-link" href="#job">For Employers </a><a class="nav-link" href="#footer">Contact Sales </a><a class="nav-link" href="./login.html">Login/Register</a></div><span class="open" style="font-size:30px;cursor:pointer; display:none;" onclick="openNav()">&#9776;</span>
-      </div>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-center"><a class="navbar-brand hidden-lg" href="#home">
+          <h3>Job</h3></a>
+        <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active"><a class="nav-link" href="#home">Tech Careers </a></li>
+            <li class="nav-item"><a class="nav-link" href="#companies">Companies </a></li>
+            <li class="nav-item"><a class="nav-link" href="#competition">Feature</a></li>
+          </ul>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="#job">For Employers  </a></li>
+            <li class="nav-item"><a class="nav-link" href="#footer">Contact Sales </a></li>
+            <li class="nav-item"><a class="nav-link" href="./login.html">Login/Register</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="sidenav" id="mySidenav"><a class="closebtn" href="" onclick="closeNav()">&times; </a><a class="nav-link" href="#home">Tech Careers </a><a class="nav-link" href="#companies">Companies</a><a class="nav-link" href="#competition">Feature</a><a class="nav-link" href="#job">For Employers </a><a class="nav-link" href="#footer">Contact Sales </a><a class="nav-link" href="./login.html">Login/Register</a></div><span class="open" style="font-size:30px;cursor:pointer; display:none;" onclick="openNav()">&#9776;</span>
     </header>
     <section id="login">
       <div class="login-page">
@@ -39,10 +37,13 @@
           </ul>
         </header>
         <div class="text-center">
-          <h3 class="welcom">Welcome, to contain please log in</h3>
+          <h3 class="welcom">Welcome, to contain please sign Up</h3>
         </div>
         <form>
           <div class="form-content text-center">
+            <div class="form-group text-center">
+              <input class="form-control input-underline input-lg" type="usermane" id="name" placeholder=" Your name">
+            </div>
             <div class="form-group text-center">
               <input class="form-control input-underline input-lg" type="email" id="textEmail" placeholder=" Your email">
             </div>
@@ -50,10 +51,10 @@
               <input class="form-control input-underline input-lg" type="password" id="inputEmail3" placeholder="Password">
             </div>
             <p class="forgetpassword-class"> 
-              <button class="btn rounded-btn" type="submit" onClick="myFunction()">Login</button><a href="">Forget Password</a>
+              <button class="btn rounded-btn" type="submit" onClick="myFunction()">regseter</button><a href="">Forget Password</a>
             </p>
             <div>
-              <p>you don't have anccount!  <a href="./signup.html">Register</a></p>
+              <p>you have anccount!  <a href="./login.html">login</a></p>
             </div>
           </div>
         </form>
